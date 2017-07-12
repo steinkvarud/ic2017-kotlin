@@ -1,0 +1,24 @@
+group 'no.iterate.ic2017se'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.26-b03'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version: '2.26-b03'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-jetty-http', version: '2.26-b03'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.26-b03'
+
+
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.6.v20170531'
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.6.v20170531'
+
+}
